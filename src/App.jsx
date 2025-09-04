@@ -34,8 +34,8 @@ function App() {
             >
               <span className="bg-gradient-to-r from-pink-900 to-red-600 bg-clip-text text-transparent tracking-widest font-black">
                 Jamie's
-              </span>{" "}
-              Weather App
+              </span>
+              &nbsp; Weather App
             </h1>
             <h1
               className="text-base sm:text-lg md:text-xl lg:text-2xl 
