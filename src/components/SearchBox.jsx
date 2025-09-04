@@ -71,9 +71,10 @@ const SearchBox = () => {
   }, []);
 
   return (
-    <div className="flex flex-col lg:flex-row justify-betwee items-center gap-10 w-full px-6 mt-10 ">
-      <div className="bg-white shadow-lg w-full max-w-lg md:max-w-md md:ml-[120px] lg:ml-[120px] xl:ml-[120px]   self-start rounded-2xl p-6  mt-10 md:justify-center">
-        <form onSubmit={handleSumit} className="flex flex-col gap-4">
+    <div className="flex flex-col lg:flex-row justify-between items-center  gap-10 w-full px-6 mt-10">
+      {/* Search Box */}
+      <div className="bg-white  lg:ml-[100px] shadow-lg w-full max-w-lg rounded-2xl p-6     ">
+        <form onSubmit={handleSumit} className=" flex flex-col gap-4 ">
           <input
             type="text"
             placeholder="Enter City Name"
@@ -90,7 +91,7 @@ const SearchBox = () => {
 
       {/* passing the found data to the child component for diplaying data and also sending the initial data for showing on diplay
        */}
-      <div className="w-full max-w-xl ">
+      <div className="w-full max-w-xl mx-auto">
         <ShowWeatherData data={weatherData} currentcity={"Delhi"} />
       </div>
     </div>

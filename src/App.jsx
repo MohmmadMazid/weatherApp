@@ -30,9 +30,10 @@ function App() {
         </div>
 
         {/* Main Content */}
-        <main className="w-full max-w-5xl px-4 md:px-8 self-center">
+        <main className="w-full max-w-5xl px-4 md:px-8 mx-auto mt-6">
           <SearchBox />
         </main>
+
         <img src={myweatherImage} className="max-w-1/2 self-center"></img>
 
         {/* Footer */}
