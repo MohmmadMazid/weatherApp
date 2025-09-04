@@ -2,19 +2,21 @@ import React, { useEffect, useState } from "react";
 import ShowWeatherData from "./ShowWeatherData";
 
 /* these are weather api url and its secret key from openweathermap.org */
-let API_URL = "https://api.openweathermap.org/data/2.5/weather";
-let API_KEY = "d4db279301b8a023458a941ee084d853";
 
+const url = import.meta.env.VITE_API_URL;
+const key = import.meta.env.VITE_API_KEY;
 const SearchBox = () => {
   const [getcityData, setGetcityData] = useState("");
   const [weatherData, setWeatherData] = useState(null);
   const [error, setError] = useState("");
+  // console.log(import.meta.env);
 
   /* geting the weather data from the web api here we are using fetch method for fetching the data */
   let getWeatherInfo = async () => {
     try {
       let response = await fetch(
-        `${API_URL}?q=${getcityData}&appid=${API_KEY}&units=metric`
+        // `${API_URL}?q=${getcityData}&appid=${API_KEY}&units=metric`
+        `${url}?q=${getcityData}&appid=${key}&units=metric`
       );
       let jsonResponse = await response.json();
 
@@ -58,9 +60,7 @@ const SearchBox = () => {
   useEffect(() => {
     async function fetchdata() {
       try {
-        let response = await fetch(
-          `${API_URL}?q=delhi&appid=${API_KEY}&units=metric`
-        );
+        let response = await fetch(`${url}?q=delhi&appid=${key}&units=metric`);
         let jsonResponse = await response.json();
         setWeatherData(jsonResponse.main);
       } catch (err) {
