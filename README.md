@@ -43,7 +43,7 @@ A simple and responsive **Weather App** built with **React + Tailwind CSS** that
 1. Clone the repo
 
 ```bash
-git clone https://github.com/your-username/weather-app.git
+git clone https://github.com/MohmmadMazid/weatherApp
 cd weather-app
 ```
 
