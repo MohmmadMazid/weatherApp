@@ -33,7 +33,7 @@ function App() {
               bg-gradient-to-r from-blue-900 to-red-900 bg-clip-text text-transparent tracking-widest"
             >
               <span className="bg-gradient-to-r from-pink-900 to-red-600 bg-clip-text text-transparent tracking-widest font-black">
-                Jamie's
+                Your's
               </span>
               &nbsp; Weather App
             </h1>
