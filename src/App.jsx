@@ -68,7 +68,7 @@ function App() {
         <SomeLines className="self-center" />
         {/* Footer */}
         <footer className="w-full text-center py-4 mt-10 sm:mt-3 lg:mt-2 text-gray-700 text-sm sm:text-base lg:text-xl ">
-          Made with ❤️ Vishal Kushwaha
+          Made with ❤️ Mohmmad Mazid 
         </footer>
       </div>
     </>
